@@ -4,33 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Google font Poppins -->
+    <!-- Google font Manrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <!-- Custom class -->
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/e2f3c97f78.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom font -->
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+    <!-- Custom color class -->
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
               clifford: "#da373d",
-              "bike-primary": "#E76F51",
-              "bike-primary-bg": "rgba(231, 111, 81, 0.1)",
             },
           },
         },
       };
     </script>
-    <!-- Custom font -->
-    <style>
-      .font-poppins {
-        font-family: "Poppins", sans-serif;
-      }
-    </style>
     <!-- daisyUI -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
@@ -40,5 +44,38 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Tea House</title>
   </head>
-  <body class="font-poppins"></body>
+  <body class="font-manrope">
+    <header class="container mx-auto">
+      <div class="hero">
+        <div class="hero-content flex-col lg:flex-row">
+          <div>
+            <h1 class="text-7xl font-extrabold">
+              It's good
+              <br />tea time at <br />The Tea House
+            </h1>
+            <p class="py-6">
+              Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+              Your Taste Buds.
+            </p>
+            <button class="btn btn-primary">Explore More</button>
+          </div>
+          <div>
+            <img src="./images/banner.png" class="max-w-sm" />
+            <!-- rating badge -->
+            <div
+              class="-mt-11 ml-2 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60 rounded-md"
+            >
+              <i class="fa-solid fa-star text-4xl text-amber-400"></i>
+              <div>
+                <h3 class="text-3xl">5.00</h3>
+                <p>Trust Pilot Ratings</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
